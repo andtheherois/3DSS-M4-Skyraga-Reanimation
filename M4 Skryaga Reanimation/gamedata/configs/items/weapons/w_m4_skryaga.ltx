@@ -80,7 +80,7 @@ ammo_elapsed                             = 40
 ammo_mag_size                            = 40
 startup_ammo                             = 90
 
-scopes 			                         = acog, eot, ac10632, specter ,c-more ,point_aimpro, leupold, aimpoint, e0t2, pn23, gauss_sight, compm4s, kemper, triji, mark8_rmr, spec_alt, mepro, ekp8_18, 0kp2
+scopes 			                         = acog, eot, ac10632, specter ,c-more ,point_aimpro, leupold, aimpoint, e0t2, pn23, gauss_sight, compm4s, kemper, triji, mark8_rmr, spec_alt, mepro, ekp8_18, 0kp2, t12
 scope_status                             = 0
 scope_zoom_factor                        = 0
 
@@ -379,12 +379,9 @@ hud				= wpn_m4_skryaga_acog_hud
 
 
 scope_status                                       = 1
-scope_texture                                      = wpn_crosshair_acog
 scope_zoom_factor                                  = 25
 zoom_rotate_time		                           = 0.25
 scope_dynamic_zoom		                           = off
-
-visual = dynamics\weapons\wpn_m4_skryaga\wpn_m4_skryaga_world.ogf
 
 [wpn_m4_skryaga_acog_hud]:wpn_m4_skryaga_hud
 
@@ -458,9 +455,6 @@ item_visual				= dynamics\weapons\wpn_m4_skryaga\wpn_m4_skryaga_c-more_hud.ogf
         aim_hud_offset_rot_16x9          = 0.005531, -0.008603, 0
 ;--------------------------------------------------------------------------------
 [wpn_m4_skryaga_specter]:wpn_m4_skryaga
-
-visual					= dynamics\weapons\wpn_m4_skryaga\wpn_m4_skryaga_world.ogf
-
 hud					= wpn_m4_skryaga_specter_hud
 
 1icon_layer                              = specter
@@ -469,7 +463,6 @@ hud					= wpn_m4_skryaga_specter_hud
 
 inv_weight                                         = 3.070
 scope_status                                       = 1
-scope_texture                                      = wpn_crosshair_specter
 scope_zoom_factor                                  = 25
 zoom_rotate_time                                   = 0.25
 scope_dynamic_zoom                                 = off
@@ -511,9 +504,6 @@ item_visual				= dynamics\weapons\wpn_m4_skryaga\wpn_m4_skryaga_mepro_hud.ogf
         aim_hud_offset_rot_16x9          = -0.008257, -0.024295, 0
 ;-------------------------------------------------------------------------------------------------------------------------------
 [wpn_m4_skryaga_leupold]:wpn_m4_skryaga
-
-visual					= dynamics\weapons\wpn_m4_skryaga\wpn_m4_skryaga_world.ogf
-
 hud					= wpn_m4_skryaga_leupold_hud
 
 1icon_layer                              = leupold
@@ -522,7 +512,6 @@ hud					= wpn_m4_skryaga_leupold_hud
 
 inv_weight                                         = 3.080
 scope_status                                       = 1
-scope_texture                                      = wpn_crosshair_leupold
 scope_zoom_factor                                  = 7
 zoom_rotate_time                                   = 0.25
 
@@ -534,9 +523,6 @@ aim_hud_offset_pos_16x9				= -0.051119,0.007090,-0.040000
 aim_hud_offset_rot_16x9				= -0.002000,0.025300,0.000000
 ;-------------------------------------------------------------------------------------------------------------------------------
 [wpn_m4_skryaga_aimpoint]:wpn_m4_skryaga
-
-visual					= dynamics\weapons\wpn_m4_skryaga\wpn_m4_skryaga_world.ogf
-
 hud						= wpn_m4_skryaga_aimpoint_hud
 
 inv_weight                                         = 2.530
@@ -619,22 +605,14 @@ item_visual				= dynamics\weapons\wpn_m4_skryaga\wpn_m4_skryaga_e0t2_hud.ogf
 ;-------------------------------------------------------------------------------------------------------------------------------
 [wpn_m4_skryaga_pn23]:wpn_m4_skryaga
 
-visual					= dynamics\weapons\wpn_m4_skryaga\wpn_m4_skryaga_world.ogf
-
 hud					= wpn_m4_skryaga_pn23_hud
 
 1icon_layer                              = pn23
 1icon_layer_x                            = 76
 1icon_layer_y                            = -10
 
-;installed_upgrades                       = up_fourte_svd_nimble
-;scope_nightvision                        = scope_nightvision_3gen
-
-nv_scope_status = 1
-
 inv_weight                                         = 3.00
 scope_status                                       = 1
-scope_texture                                      = wpn_crosshair_pn23
 scope_zoom_factor                                  = 25
 zoom_rotate_time                                   = 0.25
 
@@ -646,9 +624,6 @@ aim_hud_offset_pos_16x9				= -0.052619,0.004090,-0.053085
 aim_hud_offset_rot_16x9				= -0.002000,0.025300,0.000000
 ;-------------------------------------------------------------------------------------------------------------------------------
 [wpn_m4_skryaga_gauss_sight]:wpn_m4_skryaga
-
-visual					= dynamics\weapons\wpn_m4_skryaga\wpn_m4_skryaga_world.ogf
-
 hud					    = wpn_m4_skryaga_gauss_sight_hud
 
 1icon_layer                              = gauss_sight
@@ -657,11 +632,9 @@ hud					    = wpn_m4_skryaga_gauss_sight_hud
 
 inv_weight                                         = 3.800
 scope_status                                       = 1
-scope_texture                                      = wpn_crosshair_gauss
+
 scope_zoom_factor                                  = 12
 zoom_rotate_time                                   = 0.25
-
-;installed_upgrades                                 = up_fourtc_svd_nimble
 
 [wpn_m4_skryaga_gauss_sight_hud]:wpn_m4_skryaga_hud
 
@@ -740,8 +713,6 @@ item_visual				= dynamics\weapons\wpn_m4_skryaga\wpn_m4_skryaga_0kp2_hud.ogf
 ;------------------------------------------------------------------------------------------------
 [wpn_m4_skryaga_triji]:wpn_m4_skryaga
 
-visual					     = dynamics\weapons\wpn_m4_skryaga\wpn_m4_skryaga_world.ogf
-
 inv_grid_width     = 5
 inv_grid_height    = 2
 inv_grid_x         = 143
@@ -749,7 +720,6 @@ inv_grid_y         = 38
 
 inv_weight                                         = 3.075
 scope_status                                       = 1
-scope_texture                                      = wpn_crosshair_acog_rmr
 scope_zoom_factor                                  = 25
 zoom_rotate_time                                   = 0.25
 
@@ -772,8 +742,6 @@ aim_hud_offset_alt_rot_16x9				= 0.016338,-0.005543,0.792386
 ;----------------------------------------------------------------------------------------------------------------------------
 [wpn_m4_skryaga_spec_alt]:wpn_m4_skryaga
 
-visual					= dynamics\weapons\wpn_m4_skryaga\wpn_m4_skryaga_world.ogf
-
 hud					= wpn_m4_skryaga_spec_alt_hud
 
 inv_grid_width     = 5
@@ -783,7 +751,6 @@ inv_grid_y         = 36
 
 inv_weight                                         = 3.400
 scope_status                                       = 1
-scope_texture                                      = wpn_crosshair_specter
 scope_zoom_factor                                  = 25
 zoom_rotate_time                                   = 0.25
 scope_dynamic_zoom                                 = off
@@ -804,9 +771,6 @@ aim_hud_offset_alt_rot_16x9				= 0.016338,-0.005543,0.792386
 
 ;-------------------------------------------------------------------------------------------------------------------------------
 [wpn_m4_skryaga_mark8_rmr]:wpn_m4_skryaga
-
-visual					= dynamics\weapons\wpn_m4_skryaga\wpn_m4_skryaga_world.ogf
-
 hud					= wpn_m4_skryaga_mark8_rmr_hud
 
 inv_grid_width     = 5
@@ -816,7 +780,6 @@ inv_grid_y         = 34
 
 inv_weight                                         = 3.400
 scope_status                                       = 1
-scope_texture                                      = wpn_crosshair_leupold_rmr
 scope_zoom_factor                                  = 25
 zoom_rotate_time                                   = 0.25
 scope_dynamic_zoom                                 = off
@@ -835,3 +798,30 @@ aim_hud_offset_alt_pos_16x9				= -0.065700,-0.030035,-0.014657
 aim_hud_offset_alt_rot_16x9				= 0.016338,-0.005543,0.792386
 
 ;-------------------------------------------------------------------------------------------------------------------------------
+[wpn_m4_skryaga_t12]:wpn_m4_skryaga
+
+hud					= wpn_m4_skryaga_t12_hud
+
+1icon_layer			    = t12
+1icon_layer_x			= 105
+1icon_layer_y			= -2
+
+
+inv_weight                                         = 3.400
+scope_status                                       = 1
+scope_zoom_factor                                  = 90
+zoom_rotate_time                                   = 0.25
+scope_dynamic_zoom                                 = off
+
+scope_zoom_factor_alt             = 0
+
+use_alt_aim_hud                   = true
+
+[wpn_m4_skryaga_t12_hud]:wpn_m4_skryaga_hud
+
+item_visual				= dynamics\weapons\wpn_m4_skryaga\wpn_m4_skryaga_t12_hud.ogf
+
+        aim_hud_offset_pos               = -0.049473, 0.003256, -0.07627
+        aim_hud_offset_pos_16x9          = -0.049473, 0.003256, -0.07627
+        aim_hud_offset_rot               = 0.004922, -0.013414, 0
+        aim_hud_offset_rot_16x9          = 0.004922, -0.013414, 0
